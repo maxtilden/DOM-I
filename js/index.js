@@ -40,3 +40,34 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const services = document.getElementsByTagName('a');
+services[0].textContent = siteContent["nav"]["nav-item-1"];
+services[1].textContent = siteContent["nav"]["nav-item-2"];
+services[2].textContent = siteContent["nav"]["nav-item-3"];
+services[3].textContent = siteContent['nav']['nav-item-4'];
+services[4].textContent = siteContent['nav']['nav-item-5'];
+services[5].textContent = siteContent['nav']['nav-item-6'];
+
+const sectionOne = document.querySelector('.cta');
+
+const title = sectionOne.querySelector('h1');
+title.textContent = siteContent['cta']['h1'];
+
+const button = sectionOne.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+const img = sectionOne.querySelector('img');
+img.setAttribute('src', siteContent['cta']['img-src']);
+
+const blockOne = document.querySelector('.text-content');
+
+const featuresHead = blockOne.querySelector('h4');
+featuresHead.textContent = siteContent['main-content']['features-h4'];
+const featuresBody = blockOne.querySelector('p');
+featuresBody.textContent = siteContent['main-content']['features-content'];
+
+const blockTwo = blockOne.nextElementSibling;
+
+const aboutHead = blockTwo.querySelector('h4');
+aboutHead.textContent = siteContent['main-content']['about-h4'];
