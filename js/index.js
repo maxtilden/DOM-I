@@ -40,3 +40,64 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const services = document.getElementsByTagName('a');
+services[0].textContent = siteContent["nav"]["nav-item-1"];
+services[1].textContent = siteContent["nav"]["nav-item-2"];
+services[2].textContent = siteContent["nav"]["nav-item-3"];
+services[3].textContent = siteContent['nav']['nav-item-4'];
+services[4].textContent = siteContent['nav']['nav-item-5'];
+services[5].textContent = siteContent['nav']['nav-item-6'];
+
+const sectionOne = document.querySelector('.cta');
+
+const title = sectionOne.querySelector('h1');
+title.textContent = siteContent['cta']['h1'];
+
+const button = sectionOne.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+const img = sectionOne.querySelector('img');
+img.setAttribute('src', siteContent['cta']['img-src']);
+
+const blockOne = document.querySelector('.text-content');
+
+const featuresHead = blockOne.querySelector('h4');
+featuresHead.textContent = siteContent['main-content']['features-h4'];
+const featuresBody = blockOne.querySelector('p');
+featuresBody.textContent = siteContent['main-content']['features-content'];
+
+const blockTwo = blockOne.nextElementSibling;
+
+const aboutHead = blockTwo.querySelector('h4');
+aboutHead.textContent = siteContent['main-content']['about-h4'];
+const aboutBody = blockTwo.querySelector('p');
+aboutBody.textContent = siteContent['main-content']['about-content'];
+
+const middleImg = document.querySelector('.middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+
+const blockThree = document.querySelector('.bottom-content .text-content');
+const servicesHead = blockThree.querySelector('h4');
+servicesHead.textContent = siteContent['main-content']['services-h4'];
+const servicesAbout = blockThree.querySelector('p');
+servicesAbout.textContent = siteContent['main-content']['services-content'];
+
+const blockFour = blockThree.nextElementSibling;
+const productHead = blockFour.querySelector('h4');
+productHead.textContent = siteContent['main-content']['product-h4'];
+const productAbout = blockFour.querySelector('p');
+productAbout.textContent = siteContent['main-content']['product-content'];
+
+const blockFive = blockFour.nextElementSibling;
+
+
+const contacts = document.querySelector('.contact');
+const contactHead = contacts.querySelector('h4');
+contactHead.textContent = siteContent['contact']['contact-h4'];
+
+const foot = document.querySelector('footer');
+const footWords = foot.querySelector('p');
+footWords.textContent = siteContent['footer']['copyright'];
+
