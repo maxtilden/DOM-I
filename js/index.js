@@ -71,3 +71,33 @@ const blockTwo = blockOne.nextElementSibling;
 
 const aboutHead = blockTwo.querySelector('h4');
 aboutHead.textContent = siteContent['main-content']['about-h4'];
+const aboutBody = blockTwo.querySelector('p');
+aboutBody.textContent = siteContent['main-content']['about-content'];
+
+const middleImg = document.querySelector('.middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+
+const blockThree = document.querySelector('.bottom-content .text-content');
+const servicesHead = blockThree.querySelector('h4');
+servicesHead.textContent = siteContent['main-content']['services-h4'];
+const servicesAbout = blockThree.querySelector('p');
+servicesAbout.textContent = siteContent['main-content']['services-content'];
+
+const blockFour = blockThree.nextElementSibling;
+const productHead = blockFour.querySelector('h4');
+productHead.textContent = siteContent['main-content']['product-h4'];
+const productAbout = blockFour.querySelector('p');
+productAbout.textContent = siteContent['main-content']['product-content'];
+
+const blockFive = blockFour.nextElementSibling;
+
+
+const contacts = document.querySelector('.contact');
+const contactHead = contacts.querySelector('h4');
+contactHead.textContent = siteContent['contact']['contact-h4'];
+
+const foot = document.querySelector('footer');
+const footWords = foot.querySelector('p');
+footWords.textContent = siteContent['footer']['copyright'];
+
